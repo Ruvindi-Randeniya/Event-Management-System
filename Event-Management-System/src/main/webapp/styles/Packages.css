@@ -1,0 +1,75 @@
+img{
+	height:150px;
+	width:100%;
+  }
+body{
+	background-image: url('https://static.vecteezy.com/system/resources/thumbnails/008/058/793/small_2x/abstract-blur-with-bokeh-light-for-background-usage-vector.jpg');
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+  
+  .item{
+	padding: left 50px;
+	padding-right:350px;
+
+  }
+  .item-card{
+	transition:0.5s;
+	cursor:pointer;
+	height: 350px;
+  width: 350px;
+  background-color: #ffffff0f;
+  border: 2px solid #cccccc;
+  border-width: 2px; 
+  width: 300px; 
+  height: 475px;
+  margin-top:150px;
+  }
+  .item-card-title{  
+	font-size:15px;
+	transition:1s;
+	cursor:pointer;
+  }
+  .item-card-title i{  
+	font-size:15px;
+	transition:1s;
+	cursor:pointer;
+	color:#ffa710
+  }
+  .card-title i:hover{
+	transform: scale(1.25) rotate(100deg); 
+	color:#f10808;
+	
+  }
+  .card:hover{
+	transform: scale(1.05);
+	box-shadow: 20px 30px 50px rgba(0,0,0,0.3);
+	
+  }
+  .card-text{
+	height:80px;  
+  }
+  
+  .card::before, .card::after {
+	position: absolute;
+	top:0;
+	right:0;
+	bottom:0;
+	left:0;
+	transform: scale3d(0, 0, 1);
+	transition: transform .3s ease-out 0s;
+	background: rgba(236, 209, 156, 0.047);
+	content: '';
+	pointer-events: none;
+	
+  }
+  .card::before {
+	transform-origin: left top;
+  }
+  .card::after {
+	transform-origin: right bottom;
+  }
+  .card:hover::before, .card:hover::after, .card:focus::before, .card:focus::after {
+	transform: scale3d(1, 1, 1);
+  }
